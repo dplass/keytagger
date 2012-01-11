@@ -22,7 +22,9 @@ And if no serial port available: com0com, to create a virtual pair.
 The script writes to COM6.
 
 To log additional information on the key presses, such as the active window, use
+
 python keytagger.py >> log-%DATE:~-4%%DATE:~-7,-5%%DATE:~-10,-8%-%TIME:~-11,-9%%TIME:~-8,-6%.txt
+
 (the log filename will be marked with a timestamp)
 
 ### TODO
