@@ -30,6 +30,8 @@ python keytagger.py >> log-%DATE:~-4%%DATE:~-7,-5%%DATE:~-10,-8%-%TIME:~-11,-9%%
 ### TODO
 
 * Also listen to mouse actions
+* Key combi to turn the tagging on/off
+* Key combi to kill the program
 * Make a nice main function which takes specific arguments, such as for the com 
 port.
 * Encountered a bug that resulted in a TypeError (not an Integer), that seems 
