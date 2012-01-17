@@ -6,14 +6,22 @@ recordings.
 
 ### Available at the moment
 
-* writing keyboard codes to COM6 (for example, to use with the Emotiv EPOC)
-But it should be relatively easy to adjust to output to a parallel port (with 
+* writing keyboard codes to COM6 (for example, to use with the Emotiv EPOC), and printing information for logging.
+It should be relatively easy to adjust to output to a parallel port (with 
 pyparallel), and to also catch mouse activities (using pyhook)
+
+* writing codes related to mouse button presses to COM6, and printing information for logging.
+
+* printing mouse wheel actions.
+
+* uncommented: code to make screenshots on mouse clicks. This code can cause delays and does not seem to work in-game (then makes screenshots of the desktop beneath it).
 
 ### Requires
 
-python libraries: pyHook, pyserial, pythoncom
+python libraries: pyHook*, pyserial, pythoncom, PIL
 And if no serial port available: com0com, to create a virtual pair.
+
+* Added pyHook dir, because I had to include one small fix, that may be related to working on a 64-bit system.
 
 ### How to use keyboard2com with the Emotiv EPOC
 
