@@ -7,10 +7,9 @@ import ImageGrab, ImageDraw # PIL
 
 def OnKeyboardEvent(event):
   print "%d\t%d\t%d\t%d\t%s\t%d\t%s\tkey"%(event.Time, event.KeyID%256, event.KeyID, event.ScanCode, event.Key, event.Window, event.WindowName)
-  try:
-    q.put(event.KeyID%256)
-  except TypeError:
-    pass
+  
+  q.put(event.KeyID%256)
+  return True
   # if event.Key == "Pause": 
     # print "EXIT"
 
